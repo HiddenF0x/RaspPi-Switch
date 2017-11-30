@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Local Homepage</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css">   
+    <title>Smart Plug v0.2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ </head>
+ <!-- CHECK THIS OUT https://teamtreehouse.com/community/removing-html-from-url -->
+<body>
+  <h2 class="text-center">DIY Smart Switch</h2>
+  <p class="text-center">Web based smart switch toggle.</p>
+
+  <center>
+     <span>On / Off &nbsp;&nbsp;<label class="switch">
+     <input type="checkbox" id="toggle" onclick="S_Toggle()">
+     <span class="slider round"></span></label></span>
+  
+ </center>
+
+ <script type="text/javascript">
+        function S_Toggle() {
+            var x = document.getElementById("toggle")
+            toggle = new Boolean(false)
+            if (x.checked === true) {
+               sw_on()
+            }
+            else {
+               sw_off()
+            }
+        }
+     </script>
+
+ <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script language="javascript">
+        function sw_on() {
+            // function below will run clear.php?h=michael
+            $.ajax({
+                url: "on.php" ,
+                }
+            );
+        }
+    </script>
+    <script language="javascript">
+      function sw_off() {
+        // function below will run clear.php?h=michael
+        $.ajax({
+            url: "off.php" ,
+            }
+        );
+    }
+</script>
+
+
+
+</body>
+</html>
+
+
+
+
+<!--   
+
+ $.get("on.php");
+                return false;
+    $.get("off.php");
+                return false;
+-->
