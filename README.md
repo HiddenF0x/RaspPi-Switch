@@ -41,4 +41,4 @@ Screen Shots
 ------------
 
 ![Imgur Image.](https://i.imgur.com/GmDXWOI.png)
-![Imgur Image.]([Imgur](https://i.imgur.com/bcKwbgJ.png)
+![Imgur Image.](https://i.imgur.com/bcKwbgJ.png)
