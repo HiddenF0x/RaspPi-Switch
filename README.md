@@ -12,14 +12,14 @@ Installation
 ------------
 
 1. Install Apache2 with PHP support
-'''
+```
 sudo apt-get install Apache2 php libapache2-mod-php
-'''
+```
 1. Copy all files into /var/www/html
 1. Give permissions to files
-'''
+```
 sudo chmod -R 777 /var/www/html
-'''
+```
 
 How to use
 ----------
