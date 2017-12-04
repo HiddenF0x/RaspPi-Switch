@@ -20,6 +20,16 @@ sudo apt-get install Apache2 php libapache2-mod-php
 ```
 sudo chmod -R 777 /var/www/html
 ```
+1. Add www-data to sudoers
+```
+sudo visudo
+ADD to the bottom: www-data ALL=NOPASSWD: ALL
+```
+1. Restart Apache2
+```
+sudo service apache2 restart
+
+```
 
 How to use
 ----------
@@ -32,4 +42,4 @@ Screen Shots
 ------------
 
 ![Imgur Image.](https://i.imgur.com/GmDXWOI.png)
-
+![Imgur Image.]([Imgur](https://i.imgur.com/bcKwbgJ.png)
