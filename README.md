@@ -24,9 +24,12 @@ sudo chmod -R 777 /var/www/html
 How to use
 ----------
 
-1. Navigate to http://[raspberrypi-ip]
+1. Navigate to http://192.168.1.X
 1. Click Button!
 
 
 Screen Shots
 ------------
+
+![Imgur Image.](https://i.imgur.com/GmDXWOI.png)
+
