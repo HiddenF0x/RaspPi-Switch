@@ -15,27 +15,26 @@ Installation
 ```
 sudo apt-get install Apache2 php libapache2-mod-php
 ```
-1. Copy all files into /var/www/html
-1. Give permissions to files
+2. Copy all files into /var/www/html
+3. Give permissions to files
 ```
 sudo chmod -R 777 /var/www/html
 ```
-1. Add www-data to sudoers
+4. Add www-data to sudoers
 ```
 sudo visudo
 ADD to the bottom: www-data ALL=NOPASSWD: ALL
 ```
-1. Restart Apache2
+5. Restart Apache2
 ```
 sudo service apache2 restart
-
 ```
 
 How to use
 ----------
 
 1. Navigate to http://192.168.1.X
-1. Click Button!
+1. Click Button! (Triggers GPIO 17 and 18)
 
 
 Screen Shots
