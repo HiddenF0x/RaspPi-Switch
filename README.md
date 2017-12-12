@@ -40,6 +40,6 @@ How to use
 Screen Shots
 ------------
 <p align="center">
-    ![Imgur Image.](https://i.imgur.com/GmDXWOI.png)
-    ![Imgur Image.](https://i.imgur.com/bcKwbgJ.png)
+   <img src="https://i.imgur.com/GmDXWOI.png">
+   <img src="https://i.imgur.com/bcKwbgJ.png">
 </p>
