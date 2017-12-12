@@ -43,6 +43,6 @@ Screen Shots
    <img src="https://i.imgur.com/GmDXWOI.png">
 </p>
 
-<p algi="center">
-   <img src="https://i.imgur.com/bcKwbgJ.png" width="50%" height="50%">
+<p algin="center">
+   <img src="https://i.imgur.com/bcKwbgJ.png" width="50%" height="50%"/>
 </p>
