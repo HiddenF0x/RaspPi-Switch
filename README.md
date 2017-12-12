@@ -1,5 +1,6 @@
 # RaspPi-Switch
-Simple code for Pi home automation (web based)
+A simple front end and back end for controlling raspberry pi gpio via web.
+This project was created for a school project and personal use (controlling lights).
 
 Requirements
 ------------
@@ -36,13 +37,17 @@ How to use
 1. Navigate to http://192.168.1.X
 1. Click Button! (Triggers GPIO 17 and 18)
 
+Features to add list:
+---------------------
+
+1. Button pre-load (If switch already on)
+1. Strobe / Pulse Effects
+1. Set timer (Runs locally on Pi)
+1. installer script to be added
+
 
 Screen Shots
 ------------
 <p align="center">
    <img src="https://i.imgur.com/GmDXWOI.png">
-</p>
-
-<p algin="center">
-   <img src="https://i.imgur.com/bcKwbgJ.png" width="50%" height="50%"/>
 </p>
