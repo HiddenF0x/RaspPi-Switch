@@ -40,6 +40,7 @@ How to use
 Screen Shots
 ------------
 <p align="center">
-   <img src="https://i.imgur.com/GmDXWOI.png"">
+   <img src="https://i.imgur.com/GmDXWOI.png">
+   <p></p>
    <img src="https://i.imgur.com/bcKwbgJ.png" width="50%" height="50%">
 </p>
