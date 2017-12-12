@@ -39,6 +39,7 @@ How to use
 
 Screen Shots
 ------------
-
-![Imgur Image.](https://i.imgur.com/GmDXWOI.png)
-![Imgur Image.](https://i.imgur.com/bcKwbgJ.png)
+<p align="center">
+    ![Imgur Image.](https://i.imgur.com/GmDXWOI.png)
+    ![Imgur Image.](https://i.imgur.com/bcKwbgJ.png)
+</p>
