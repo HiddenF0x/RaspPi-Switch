@@ -13,15 +13,43 @@
   <h2 class="text-center">DIY Smart Switch</h2>
   <p class="text-center">Web based smart switch toggle.</p>
 
-  <center>
-     <span>On / Off &nbsp;&nbsp;<label class="switch">
-     <input type="checkbox" id="toggle" onclick="S_Toggle()">
-     <span class="slider round"></span></label></span>
-  
- </center>
+<center>
+<!-- Toggle Switch -->
+    <span>On / Off &nbsp;&nbsp;<label class="switch">
+    <input type="checkbox" id="toggle" onclick="S_Toggle()">
+    <span class="slider round"></span></label></span>
+    <br> 
+<!-- Toggle Speed -->
+    <button onclick="set_speed()" class="dropbtn">Speed</button>
+    <div id="Speed_DD" class="dropdown-content">
+        <a onclick="Speed_JS(1)" href="#">1</a>
+        <a onclick="Speed_JS(0.5)" href="#">1/2</a>
+        <a onclick="Speed_JS(0.25)" href="#">1/4</a>
+        <a onclick="Speed_JS(0.125)" href="#">1/8</a>        
+    </div>
+<!-- Toggle Time -->
+<button onclick="set_time()" class="dropbtn">Time</button>
+<div id="Time_DD" class="dropdown-content">
+    <a onclick="Time_JS(10)" href="#">10 Sec</a>
+    <a onclick="Time_JS(60)" href="#">1 Min</a>
+    <a onclick="Time_JS(300)" href="#">5 Min</a>
+    <a onclick="Time_JS(600)" href="#">10 Min</a>
+</div>
+    
 
- <script type="text/javascript">
-        function S_Toggle() {
+  <!-- Submit Button -->
+<button type="button" onclick="strobe_submit()" class="btn btn-primary">Start</button>
+
+
+</center>
+
+<!-- Javascript starts here-->
+<script type="text/javascript">
+
+///////////////////
+// Toggle Switch //
+///////////////////   
+    function S_Toggle() {
             var x = document.getElementById("toggle")
             toggle = new Boolean(false)
             if (x.checked === true) {
@@ -32,7 +60,7 @@
             }
         }
      </script>
-
+ 
  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script language="javascript">
         function sw_on() {
@@ -51,20 +79,70 @@
             }
         );
     }
+
+////////////////////////////
+// Drop down menu (Speed) //
+////////////////////////////
+function set_speed() {
+    document.getElementById("Speed_DD").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+///////////////////////////
+// Drop down menu (Time) //
+///////////////////////////
+function set_time() {
+    document.getElementById("Time_DD").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+///////////////////
+//     Strobe    //
+///////////////////
+
+var time_final = 0       // Make global variables
+var speed_final  = 0    // Default set to 0
+
+function Speed_JS(x) {
+    speed_final = x ;    // Sets speed_final when selected...
+}
+
+function Time_JS(x)  {
+    time_final = x ;     // Sets time_final when selected...
+}
+function strobe_submit() {
+    window.alert("Speed: " + speed_final + " Time: " + time_final); 
+    window.open('https://www.codexworld.com', '_blank');
+}
 </script>
-
-
 
 </body>
 </html>
 
-
-
-
-<!--   
-
- $.get("on.php");
-                return false;
-    $.get("off.php");
-                return false;
--->

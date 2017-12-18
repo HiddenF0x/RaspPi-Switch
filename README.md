@@ -1,4 +1,4 @@
-# RaspPi-Switch
+# RasppberryPi-Switch
 A simple front end and back end for controlling raspberry pi gpio via web.
 This project was created for a school project and personal use (controlling lights).
 
@@ -6,7 +6,7 @@ Requirements
 ------------
 
 1. This requires a <b>Raspberry Pi</b> with networking
-1. Apache2 w/ php
+1. Apache2 w/ PHP5
 1. A relay board
 
 Installation
