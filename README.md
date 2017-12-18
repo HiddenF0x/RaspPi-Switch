@@ -51,5 +51,5 @@ Features to add list:
 Screen Shots
 ------------
 <p align="center">
-   <img src="https://i.imgur.com/GmDXWOI.png">
+   <img src="https://i.imgur.com/39D8ZVv.png">
 </p>
