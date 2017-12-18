@@ -22,6 +22,8 @@ sudo apt-get install Apache2 php libapache2-mod-php
 sudo chmod -R 777 /var/www/html
 ```
 4. Add www-data to sudoers
+This might be classed as dangerous although sudo is only being used via .py's to kill and manage GPIO
+It is not recommended to use this outside of LAN!
 ```
 sudo visudo
 ADD to the bottom: www-data ALL=NOPASSWD: ALL
@@ -41,7 +43,7 @@ Features to add list:
 ---------------------
 
 1. Button pre-load (If switch already on)
-1. Strobe / Pulse Effects
+1. Strobe / Pulse Effects (Finished?)
 1. Set timer (Runs locally on Pi)
 1. installer script to be added
 

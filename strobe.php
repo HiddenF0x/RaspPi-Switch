@@ -12,10 +12,15 @@
 <body>
 
 	<?php
-	exec('sudo /usr/bin/python /var/www/html/php/Strobe.py -t ' + $_GET["time"] + ' -s ' + $S_GET["speed"]);
+	$time = 2;
+	$speed = 1;
+	$speed = $_GET["speed"];
+	$time = $_GET["time"];
+	echo "Process ID:";
+	echo exec("sudo /usr/bin/python /var/www/html/php/Strobe.py -t $time -s $speed");
 	// The value of the variable name is found
-	echo "<h1>Hello " . $_GET["time"] . "</h1>";
-	echo "<h1>Hello " . $_GET["speed"] . "</h1>";
+	echo "<h1>time: " . $time . "</h1>";
+	echo "<h1>speed: " . $speed . "</h1>";
 	?>	
 
 </body>

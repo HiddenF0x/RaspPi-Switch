@@ -39,7 +39,8 @@
 
   <!-- Submit Button -->
 <button type="button" onclick="strobe_submit()" class="btn btn-primary">Start</button>
-
+  <!-- Force stop Button -->
+  <button type="button" onclick="strobe_stop()" class="btn btn-danger">Stop</button>
 
 </center>
 
@@ -138,8 +139,14 @@ function Time_JS(x)  {
     time_final = x ;     // Sets time_final when selected...
 }
 function strobe_submit() {
-    window.alert("Speed: " + speed_final + " Time: " + time_final); 
-    window.open('https://www.codexworld.com', '_blank');
+   // window.alert("Speed: " + speed_final + " Time: " + time_final); // Used for debug
+    var xmlhttp = new XMLHttpRequest();
+        xmlhttp.open("GET", "/strobe.php?time=" + time_final + "&speed=" + speed_final, true);
+        xmlhttp.send();
+}
+
+function strobe_stop() {
+    window.open("/kill.php")
 }
 </script>
 
